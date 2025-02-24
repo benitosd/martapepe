@@ -89,7 +89,7 @@ class OrdenDeTrabajo < ApplicationRecord
    
     searchable do
       
-      integer :numero
+      text :numero
       string :numero
       integer :clientes
       integer :representantes
