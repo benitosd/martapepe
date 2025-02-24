@@ -25,5 +25,6 @@ test:
 
 production:
   <<: *default
-  host: localhost
-  database: cuymon_production
+  host: 172.16.16.185
+  password: usuario35250
+  database: islatold
