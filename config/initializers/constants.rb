@@ -1,3 +1,9 @@
+ORDEN_DE_TRABAJOS_SORTER_LIST = [
+  ['Fecha de creación', 'created_at'],
+  ['Número', 'numero'],
+  ['Estado', 'estado'],
+  # Añade más campos según necesites
+]
 CONTAINERS_SORTER_LIST={}
 USERS_SORTER_LIST={}
 CREDIT_NOTES_SORTER_LIST={}

@@ -1856,3 +1856,449 @@
 2025-02-23 23:59:03.919 INFO  (searcherExecutor-9-thread-1-processing-x:development) [   x:development] o.a.s.c.SolrCore [development] Registered new searcher Searcher@4a75aa30[development] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_dd(5.3.1):C166049/2052:delGen=24) Uninverting(_dn(5.3.1):C226840/14:delGen=1) Uninverting(_e7(5.3.1):c1074) Uninverting(_ee(5.3.1):C5/1:delGen=1) Uninverting(_eg(5.3.1):C1) Uninverting(_eh(5.3.1):C45)))}
 2025-02-23 23:59:03.919 INFO  (qtp1555845260-19) [   x:development] o.a.s.u.UpdateHandler end_commit_flush
 2025-02-23 23:59:03.920 INFO  (qtp1555845260-19) [   x:development] o.a.s.u.p.LogUpdateProcessor [development] webapp=/solr path=/update params={wt=json} {commit=} 0 39
+2025-02-24 11:48:58.285 INFO  (main) [   ] o.e.j.u.log Logging initialized @456ms
+2025-02-24 11:48:58.504 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2025-02-24 11:48:58.522 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2025-02-24 11:48:58.523 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/contexts/] at interval 0
+2025-02-24 11:48:58.926 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-02-24 11:48:58.939 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@13deb50e{/solr,file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp/,STARTING}{/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+2025-02-24 11:48:58.949 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1225439493@490ab905
+2025-02-24 11:48:58.975 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2025-02-24 11:48:58.975 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/gabe/desarrollo/martapepe/solr
+2025-02-24 11:48:58.981 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/'
+2025-02-24 11:48:59.171 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/gabe/desarrollo/martapepe/solr/solr.xml
+2025-02-24 11:48:59.276 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/gabe/desarrollo/martapepe/solr
+2025-02-24 11:48:59.310 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1092572064
+2025-02-24 11:48:59.310 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/gabe/desarrollo/martapepe/solr/]
+2025-02-24 11:48:59.310 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/gabe/desarrollo/martapepe/solr/lib
+2025-02-24 11:48:59.310 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/gabe/desarrollo/martapepe/solr/lib).
+2025-02-24 11:48:59.328 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2025-02-24 11:48:59.563 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2025-02-24 11:48:59.565 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2025-02-24 11:48:59.566 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2025-02-24 11:48:59.569 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2025-02-24 11:48:59.569 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2025-02-24 11:48:59.613 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/gabe/desarrollo/martapepe/solr
+2025-02-24 11:48:59.632 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=development, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/development, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/development/, configSet=sunspot, dataDir=./data}
+2025-02-24 11:48:59.633 INFO  (main) [   ] o.a.s.c.CoresLocator Found core development in /home/gabe/desarrollo/martapepe/solr/development/
+2025-02-24 11:48:59.633 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=test, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/test, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/test/, configSet=sunspot, dataDir=./data}
+2025-02-24 11:48:59.634 INFO  (main) [   ] o.a.s.c.CoresLocator Found core test in /home/gabe/desarrollo/martapepe/solr/test/
+2025-02-24 11:48:59.634 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=default, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/default, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/default/, configSet=sunspot, dataDir=./data}
+2025-02-24 11:48:59.634 INFO  (main) [   ] o.a.s.c.CoresLocator Found core default in /home/gabe/desarrollo/martapepe/solr/default/
+2025-02-24 11:48:59.635 INFO  (main) [   ] o.a.s.c.CoresLocator Found 3 core definitions
+2025-02-24 11:48:59.638 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 11:48:59.638 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 11:48:59.638 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 11:48:59.640 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server
+2025-02-24 11:48:59.641 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2025-02-24 11:48:59.658 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@13deb50e{/solr,file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp}
+2025-02-24 11:48:59.690 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 11:48:59.690 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 11:48:59.690 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 11:48:59.747 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 11:48:59.748 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 11:48:59.753 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 11:48:59.757 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 11:48:59.757 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 11:48:59.757 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 11:48:59.813 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@15043a2f{HTTP/1.1}{0.0.0.0:8982}
+2025-02-24 11:48:59.813 INFO  (main) [   ] o.e.j.s.Server Started @1985ms
+2025-02-24 11:48:59.871 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 11:48:59.871 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 11:48:59.871 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 11:48:59.882 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 11:48:59.882 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 11:48:59.882 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 11:48:59.912 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [development] Schema name=sunspot
+2025-02-24 11:48:59.912 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [test] Schema name=sunspot
+2025-02-24 11:48:59.912 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [default] Schema name=sunspot
+2025-02-24 11:49:00.093 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 11:49:00.093 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 11:49:00.094 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 11:49:00.094 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 11:49:00.094 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 11:49:00.094 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 11:49:00.095 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 11:49:00.095 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 11:49:00.095 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 11:49:00.097 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 11:49:00.097 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 11:49:00.097 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'default' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'development' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 11:49:00.098 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 11:49:00.111 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore [[development] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 11:49:00.111 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 11:49:00.111 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore [[default] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 11:49:00.113 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 11:49:00.113 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 11:49:00.113 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 11:49:00.129 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/test/data
+2025-02-24 11:49:00.129 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/default/data
+2025-02-24 11:49:00.129 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/development/data
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/development/data/index/
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/test/data/index/
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/default/data/index/
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/development/data/index
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/default/data/index
+2025-02-24 11:49:00.130 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/test/data/index
+2025-02-24 11:49:00.142 INFO  (OldIndexDirectoryCleanupThreadForCore-default) [   x:default] o.a.s.c.SolrCore Looking for old index directories to cleanup for core default in /home/gabe/desarrollo/martapepe/solr/default/data/
+2025-02-24 11:49:00.143 INFO  (OldIndexDirectoryCleanupThreadForCore-development) [   x:development] o.a.s.c.SolrCore Looking for old index directories to cleanup for core development in /home/gabe/desarrollo/martapepe/solr/development/data/
+2025-02-24 11:49:00.143 INFO  (OldIndexDirectoryCleanupThreadForCore-test) [   x:test] o.a.s.c.SolrCore Looking for old index directories to cleanup for core test in /home/gabe/desarrollo/martapepe/solr/test/data/
+2025-02-24 11:49:00.222 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 11:49:00.232 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 11:49:00.240 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 11:49:00.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.262 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.262 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.264 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.264 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.264 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.264 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.264 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.265 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.265 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.265 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.265 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 11:49:00.276 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 11:49:00.277 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 11:49:00.279 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 11:49:00.281 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 11:49:00.281 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 11:49:00.281 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 11:49:00.281 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 11:49:00.282 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 11:49:00.282 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 11:49:00.283 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 11:49:00.283 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 11:49:00.283 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 11:49:00.284 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 11:49:00.295 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 11:49:00.295 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 11:49:00.305 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 11:49:00.313 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 11:49:00.314 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 11:49:00.322 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 11:49:00.322 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 11:49:00.322 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 11:49:00.322 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 11:49:00.352 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/default/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539760cf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+2025-02-24 11:49:00.352 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/test/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539760cf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2025-02-24 11:49:00.352 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore newest commit generation = 3
+2025-02-24 11:49:00.352 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore newest commit generation = 1
+2025-02-24 11:49:00.354 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539760cf; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_dv,generation=499}
+2025-02-24 11:49:00.355 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore newest commit generation = 499
+2025-02-24 11:49:00.369 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@16931cac[test] main
+2025-02-24 11:49:00.382 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.382 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 11:49:00.395 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.395 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.396 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 11:49:00.396 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 11:49:00.409 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 11:49:00.425 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 11:49:00.432 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 11:49:00.433 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 11:49:00.437 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.s.SolrIndexSearcher Opening Searcher@196132af[default] main
+2025-02-24 11:49:00.437 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.437 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 11:49:00.438 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.438 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.438 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 11:49:00.438 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 11:49:00.439 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 11:49:00.440 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 11:49:00.440 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 11:49:00.443 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 11:49:00.444 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 11:49:00.444 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 11:49:00.444 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2025-02-24 11:49:00.444 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1824939301083807744
+2025-02-24 11:49:00.445 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 11:49:00.446 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 11:49:00.446 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 11:49:00.446 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 11:49:00.447 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 11:49:00.447 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 11:49:00.447 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 11:49:00.447 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 11:49:00.448 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 11:49:00.448 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 11:49:00.448 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 11:49:00.448 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 11:49:00.448 INFO  (searcherExecutor-7-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@16931cac[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2025-02-24 11:49:00.450 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Took 6 ms to seed version buckets with highest version 1824939301083807744
+2025-02-24 11:49:00.452 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.c.SolrCore [default] Registered new searcher Searcher@196132af[default] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(5.3.1):C3)))}
+2025-02-24 11:49:00.453 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CoreContainer registering core: test
+2025-02-24 11:49:00.457 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.s.SolrIndexSearcher Opening Searcher@694156bb[development] main
+2025-02-24 11:49:00.457 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.457 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 11:49:00.457 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.458 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 11:49:00.458 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 11:49:00.458 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 11:49:00.458 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 11:49:00.459 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 11:49:00.459 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 11:49:00.460 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.VersionInfo Found MAX value 1800193740656082944 from Terms for _version_ in index
+2025-02-24 11:49:00.460 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 11:49:00.460 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 11:49:00.460 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 11:49:00.461 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 11:49:00.461 INFO  (searcherExecutor-9-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 11:49:00.461 INFO  (searcherExecutor-9-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 11:49:00.462 INFO  (searcherExecutor-9-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 11:49:00.461 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 11:49:00.462 INFO  (searcherExecutor-9-thread-1-processing-x:development) [   x:development] o.a.s.c.SolrCore [development] Registered new searcher Searcher@694156bb[development] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_dd(5.3.1):C166049/2052:delGen=24) Uninverting(_dn(5.3.1):C226840/14:delGen=1) Uninverting(_e7(5.3.1):c1074) Uninverting(_ee(5.3.1):C5/1:delGen=1) Uninverting(_eg(5.3.1):C1) Uninverting(_eh(5.3.1):C45)))}
+2025-02-24 11:49:00.464 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Took 17 ms to seed version buckets with highest version 1800193740656082944
+2025-02-24 11:49:00.464 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CoreContainer registering core: default
+2025-02-24 11:49:00.476 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.VersionInfo Found MAX value 1824894635344920577 from Terms for _version_ in index
+2025-02-24 11:49:00.478 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Took 17 ms to seed version buckets with highest version 1824894635344920577
+2025-02-24 11:49:00.478 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CoreContainer registering core: development
+2025-02-24 12:15:30.989 INFO  (qtp1555845260-14) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=205 
+2025-02-24 12:17:46.461 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=6 
+2025-02-24 12:18:25.013 INFO  (qtp1555845260-17) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:18:34.309 INFO  (qtp1555845260-16) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:18:54.735 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:20:25.728 INFO  (qtp1555845260-16) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 12:20:53.629 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 12:22:43.937 INFO  (qtp1555845260-15) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:22:53.571 INFO  (qtp1555845260-14) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:26:37.516 INFO  (qtp1555845260-17) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 12:28:50.817 INFO  (qtp1555845260-15) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 23:11:08.320 INFO  (main) [   ] o.e.j.u.log Logging initialized @151ms
+2025-02-24 23:11:08.407 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2025-02-24 23:11:08.415 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2025-02-24 23:11:08.416 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/contexts/] at interval 0
+2025-02-24 23:11:08.599 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2025-02-24 23:11:08.604 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@13deb50e{/solr,file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp/,STARTING}{/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+2025-02-24 23:11:08.608 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1225439493@490ab905
+2025-02-24 23:11:08.614 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2025-02-24 23:11:08.615 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/gabe/desarrollo/martapepe/solr
+2025-02-24 23:11:08.616 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/'
+2025-02-24 23:11:08.678 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/gabe/desarrollo/martapepe/solr/solr.xml
+2025-02-24 23:11:08.710 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /home/gabe/desarrollo/martapepe/solr
+2025-02-24 23:11:08.721 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1092572064
+2025-02-24 23:11:08.722 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/gabe/desarrollo/martapepe/solr/]
+2025-02-24 23:11:08.722 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /home/gabe/desarrollo/martapepe/solr/lib
+2025-02-24 23:11:08.722 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /home/gabe/desarrollo/martapepe/solr/lib).
+2025-02-24 23:11:08.729 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2025-02-24 23:11:08.822 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2025-02-24 23:11:08.824 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2025-02-24 23:11:08.824 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2025-02-24 23:11:08.825 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2025-02-24 23:11:08.825 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2025-02-24 23:11:08.839 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /home/gabe/desarrollo/martapepe/solr
+2025-02-24 23:11:08.849 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=development, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/development, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/development/, configSet=sunspot, dataDir=./data}
+2025-02-24 23:11:08.849 INFO  (main) [   ] o.a.s.c.CoresLocator Found core development in /home/gabe/desarrollo/martapepe/solr/development/
+2025-02-24 23:11:08.850 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=test, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/test, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/test/, configSet=sunspot, dataDir=./data}
+2025-02-24 23:11:08.850 INFO  (main) [   ] o.a.s.c.CoresLocator Found core test in /home/gabe/desarrollo/martapepe/solr/test/
+2025-02-24 23:11:08.851 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=default, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/home/gabe/desarrollo/martapepe/solr/default, absoluteInstDir=/home/gabe/desarrollo/martapepe/solr/default/, configSet=sunspot, dataDir=./data}
+2025-02-24 23:11:08.851 INFO  (main) [   ] o.a.s.c.CoresLocator Found core default in /home/gabe/desarrollo/martapepe/solr/default/
+2025-02-24 23:11:08.851 INFO  (main) [   ] o.a.s.c.CoresLocator Found 3 core definitions
+2025-02-24 23:11:08.853 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 23:11:08.854 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 23:11:08.853 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/'
+2025-02-24 23:11:08.856 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server
+2025-02-24 23:11:08.856 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2025-02-24 23:11:08.866 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@13deb50e{/solr,file:/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp/,AVAILABLE}{/home/gabe/.rvm/gems/ruby-3.1.0/gems/sunspot_solr-2.7.1/solr/server/solr-webapp/webapp}
+2025-02-24 23:11:08.881 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 23:11:08.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 23:11:08.881 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : -1
+2025-02-24 23:11:08.914 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 23:11:08.916 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 23:11:08.917 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2025-02-24 23:11:08.919 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 23:11:08.919 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 23:11:08.919 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.0.0
+2025-02-24 23:11:08.930 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@15043a2f{HTTP/1.1}{0.0.0.0:8982}
+2025-02-24 23:11:08.930 INFO  (main) [   ] o.e.j.s.Server Started @763ms
+2025-02-24 23:11:08.974 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 23:11:08.974 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 23:11:08.975 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+2025-02-24 23:11:08.978 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 23:11:08.978 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 23:11:08.979 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf/schema.xml
+2025-02-24 23:11:08.991 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [test] Schema name=sunspot
+2025-02-24 23:11:08.993 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [default] Schema name=sunspot
+2025-02-24 23:11:08.994 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [development] Schema name=sunspot
+2025-02-24 23:11:09.068 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 23:11:09.068 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 23:11:09.069 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema default search field in schema is text
+2025-02-24 23:11:09.069 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 23:11:09.069 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 23:11:09.069 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema query parser default operator is AND
+2025-02-24 23:11:09.070 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 23:11:09.070 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 23:11:09.070 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'default' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf'
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'development' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 23:11:09.072 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from configset /home/gabe/desarrollo/martapepe/solr/configsets/sunspot
+2025-02-24 23:11:09.073 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 23:11:09.073 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 23:11:09.073 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2025-02-24 23:11:09.092 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore [[default] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 23:11:09.092 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore [[development] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 23:11:09.092 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/], dataDir=[null]
+2025-02-24 23:11:09.094 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 23:11:09.094 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 23:11:09.094 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2025-02-24 23:11:09.101 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/default/data
+2025-02-24 23:11:09.101 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/development/data
+2025-02-24 23:11:09.101 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/test/data
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/development/data/index/
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/test/data/index/
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore New index directory detected: old=null new=/home/gabe/desarrollo/martapepe/solr/default/data/index/
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/test/data/index
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/default/data/index
+2025-02-24 23:11:09.102 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CachingDirectoryFactory return new directory for /home/gabe/desarrollo/martapepe/solr/development/data/index
+2025-02-24 23:11:09.109 INFO  (OldIndexDirectoryCleanupThreadForCore-default) [   x:default] o.a.s.c.SolrCore Looking for old index directories to cleanup for core default in /home/gabe/desarrollo/martapepe/solr/default/data/
+2025-02-24 23:11:09.109 INFO  (OldIndexDirectoryCleanupThreadForCore-test) [   x:test] o.a.s.c.SolrCore Looking for old index directories to cleanup for core test in /home/gabe/desarrollo/martapepe/solr/test/data/
+2025-02-24 23:11:09.110 INFO  (OldIndexDirectoryCleanupThreadForCore-development) [   x:development] o.a.s.c.SolrCore Looking for old index directories to cleanup for core development in /home/gabe/desarrollo/martapepe/solr/development/data/
+2025-02-24 23:11:09.149 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 23:11:09.149 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 23:11:09.152 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2025-02-24 23:11:09.166 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.166 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.166 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.168 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2025-02-24 23:11:09.175 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 23:11:09.175 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 23:11:09.175 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 23:11:09.176 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 23:11:09.176 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2025-02-24 23:11:09.176 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2025-02-24 23:11:09.177 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 23:11:09.177 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 23:11:09.177 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2025-02-24 23:11:09.179 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 23:11:09.179 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 23:11:09.179 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/mlt,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+2025-02-24 23:11:09.180 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 23:11:09.180 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 23:11:09.180 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 23:11:09.185 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2025-02-24 23:11:09.190 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 23:11:09.190 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 23:11:09.194 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 23:11:09.194 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 23:11:09.194 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+2025-02-24 23:11:09.194 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore Soft AutoCommit: disabled
+2025-02-24 23:11:09.211 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/default/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@65cfd787; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+2025-02-24 23:11:09.211 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/test/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@65cfd787; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2025-02-24 23:11:09.212 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.SolrCore newest commit generation = 3
+2025-02-24 23:11:09.212 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.SolrCore newest commit generation = 1
+2025-02-24 23:11:09.218 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/gabe/desarrollo/martapepe/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@65cfd787; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_dv,generation=499}
+2025-02-24 23:11:09.218 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.SolrCore newest commit generation = 499
+2025-02-24 23:11:09.222 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.s.SolrIndexSearcher Opening Searcher@24181d62[test] main
+2025-02-24 23:11:09.229 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.229 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 23:11:09.236 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.237 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.237 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 23:11:09.238 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 23:11:09.241 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 23:11:09.254 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 23:11:09.257 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 23:11:09.257 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 23:11:09.261 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.s.SolrIndexSearcher Opening Searcher@2cb917ea[default] main
+2025-02-24 23:11:09.261 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.261 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 23:11:09.261 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 23:11:09.262 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 23:11:09.263 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 23:11:09.263 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 23:11:09.263 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 23:11:09.263 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 23:11:09.263 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 23:11:09.263 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 23:11:09.263 INFO  (searcherExecutor-9-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-9-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-9-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-9-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test] Registered new searcher Searcher@24181d62[test] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2025-02-24 23:11:09.264 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 23:11:09.264 INFO  (searcherExecutor-8-thread-1-processing-x:default) [   x:default] o.a.s.c.SolrCore [default] Registered new searcher Searcher@2cb917ea[default] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1(5.3.1):C3)))}
+2025-02-24 23:11:09.264 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 23:11:09.264 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 23:11:09.265 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2025-02-24 23:11:09.265 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 23:11:09.265 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1824982218063216640
+2025-02-24 23:11:09.267 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.u.UpdateLog Took 3 ms to seed version buckets with highest version 1824982218063216640
+2025-02-24 23:11:09.268 INFO  (coreLoadExecutor-6-thread-2) [   x:test] o.a.s.c.CoreContainer registering core: test
+2025-02-24 23:11:09.270 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.VersionInfo Found MAX value 1800193740656082944 from Terms for _version_ in index
+2025-02-24 23:11:09.271 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.u.UpdateLog Took 7 ms to seed version buckets with highest version 1800193740656082944
+2025-02-24 23:11:09.272 INFO  (coreLoadExecutor-6-thread-3) [   x:default] o.a.s.c.CoreContainer registering core: default
+2025-02-24 23:11:09.284 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.s.SolrIndexSearcher Opening Searcher@ff32eb0[development] main
+2025-02-24 23:11:09.284 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.284 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf}
+2025-02-24 23:11:09.284 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/gabe/desarrollo/martapepe/solr/configsets/sunspot/conf
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.s.DirectSolrSpellChecker init: {name=example,field=title_text,buildOnOptimize=true,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: example
+2025-02-24 23:11:09.285 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2025-02-24 23:11:09.286 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2025-02-24 23:11:09.286 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2025-02-24 23:11:09.286 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2025-02-24 23:11:09.287 INFO  (searcherExecutor-7-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-02-24 23:11:09.287 INFO  (searcherExecutor-7-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: example
+2025-02-24 23:11:09.287 INFO  (searcherExecutor-7-thread-1-processing-x:development) [   x:development] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2025-02-24 23:11:09.287 INFO  (searcherExecutor-7-thread-1-processing-x:development) [   x:development] o.a.s.c.SolrCore [development] Registered new searcher Searcher@ff32eb0[development] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_dd(5.3.1):C166049/2052:delGen=24) Uninverting(_dn(5.3.1):C226840/14:delGen=1) Uninverting(_e7(5.3.1):c1074) Uninverting(_ee(5.3.1):C5/1:delGen=1) Uninverting(_eg(5.3.1):C1) Uninverting(_eh(5.3.1):C45)))}
+2025-02-24 23:11:09.294 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.VersionInfo Found MAX value 1824894635344920577 from Terms for _version_ in index
+2025-02-24 23:11:09.296 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.u.UpdateLog Took 10 ms to seed version buckets with highest version 1824894635344920577
+2025-02-24 23:11:09.296 INFO  (coreLoadExecutor-6-thread-1) [   x:development] o.a.s.c.CoreContainer registering core: development
+2025-02-24 23:17:40.555 INFO  (qtp1555845260-21) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=33 
+2025-02-24 23:21:46.818 INFO  (qtp1555845260-20) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:21:57.704 INFO  (qtp1555845260-22) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 23:22:05.631 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:22:07.647 INFO  (qtp1555845260-22) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 23:22:09.573 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 23:22:37.330 INFO  (qtp1555845260-19) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:23:52.269 INFO  (qtp1555845260-19) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:23:56.300 INFO  (qtp1555845260-19) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=7 
+2025-02-24 23:25:06.884 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=1 
+2025-02-24 23:26:25.486 INFO  (qtp1555845260-20) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:26:54.343 INFO  (qtp1555845260-22) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=45 status=0 QTime=0 
+2025-02-24 23:27:05.703 INFO  (qtp1555845260-18) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=11&defType=edismax&qf=descripcion_text+instalar_en_text&fl=*+score&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=6 status=0 QTime=21 
+2025-02-24 23:33:51.624 INFO  (qtp1555845260-21) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=11&defType=edismax&qf=descripcion_text+instalar_en_text&fl=*+score&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=6 status=0 QTime=1 
+2025-02-24 23:34:51.580 INFO  (qtp1555845260-19) [   x:development] o.a.s.c.S.Request [development] webapp=/solr path=/select params={q=11&defType=edismax&qf=descripcion_text+instalar_en_text&fl=*+score&start=0&fq=type:OrdenDeTrabajo&sort=numero_s+desc&rows=10&wt=json} hits=6 status=0 QTime=1 

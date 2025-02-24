@@ -1,0 +1,68 @@
+<div class="card mb-4">
+    <div class="card-header text-white bg-primary">
+        <i class="fas fa-table me-1"></i>
+        Orden de Trabajo
+    </div>
+    <div class="card-body">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <strong>Nº Orden:</strong>
+                <span class="fs-4 text-danger"><%= orden_de_trabajo.numero %></span>
+            </div>
+            <div class="col-md-6 text-end">
+                <strong>Fecha Orden:</strong>
+                <span><%= orden_de_trabajo.fecha_orden.present? ? orden_de_trabajo.fecha_orden.strftime("%d/%m/%Y") : Date.today.strftime("%d/%m/%Y") %></span>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <strong>Representante:</strong>
+                <span><%= orden_de_trabajo.representante.present? ? orden_de_trabajo.representante.Nombre_Representante : "N/A" %></span>
+            </div>
+            <div class="col-md-6 text-end">
+                <strong>Cliente Nº:</strong>
+                <span><%= orden_de_trabajo.cliente.present? ? orden_de_trabajo.cliente.Numero_Cliente : "N/A" %></span>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <strong>Descripción:</strong>
+                <p class="border p-2 bg-light"><%= orden_de_trabajo.descripcion %></p>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <strong>Fecha Montaje:</strong>
+                <span><%= orden_de_trabajo.fecha_montaje.present? ? orden_de_trabajo.fecha_montaje.strftime("%d/%m/%Y") : Date.today.strftime("%d/%m/%Y") %></span>
+            </div>
+            <div class="col-md-6 text-end">
+                <strong>Plazo de Entrega:</strong>
+                <span><%= orden_de_trabajo.plazo_entrega %></span>
+            </div>
+        </div>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <strong>Situación:</strong>
+                <% situacion_texto = case orden_de_trabajo.situacion_trabajo
+                   when 0 then ['Sin Empezar', 'bg-secondary']
+                   when 1 then ['Para Montar', 'bg-warning text-dark']
+                   when 2 then ['Terminado', 'bg-success']
+                   else ['Desconocido', 'bg-info text-dark']
+                   end %>
+                <span class="badge <%= situacion_texto[1] %>"><%= situacion_texto[0] %></span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12 text-end">
+                <%= link_to edit_orden_de_trabajo_path(orden_de_trabajo), class: 'btn btn-success' do %>
+                    <i class="fas fa-edit"></i> Editar
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

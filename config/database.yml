@@ -9,7 +9,7 @@ default: &default
   encoding: utf8
   username: dbuser
   password: Usua@rio35250
-  host: 192.168.1.77
+  host: 192.168.1.79
   port: 3306
 
 development:

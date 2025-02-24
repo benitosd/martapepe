@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Órdenes de Trabajo</h1>
+    <%= render 'layouts/search_order_bar', controller: 'orden_de_trabajos' %>
+
+    <div class="row">
+        <% @orden_de_trabajos.each do |orden_de_trabajo| %>
+            <%= render 'orden_de_trabajos/orden_de_trabajo', orden_de_trabajo: orden_de_trabajo %>
+        <% end %>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        <%= will_paginate @orden_de_trabajos, 
+            class: 'pagination',
+            renderer: BootstrapPagination::Rails %>
+    </div>
+</div>
