@@ -1,0 +1,115 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h3 class="card-title">
+      <%= @client.new_record? ? I18n.t("aia_store.clients.new") : I18n.t("aia_store.clients.edit") %>
+    </h3>
+    <%= link_to I18n.t("aia_store.buttons.back"), clients_path, class: "btn btn-secondary float-end" %>
+  </div>
+
+  <div class="card-body">
+    <%= form_with(model: @client, local: true) do |f| %>
+      <div id="form_errors">
+        <%= render partial: "layouts/form_errors", locals: { object: @client } %>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <%= f.label :ledger_account, I18n.t("aia_store.clients.cols.ledger_account"), class: "form-label" %>
+          <%= f.text_field :ledger_account, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :name, I18n.t("aia_store.clients.cols.name"), class: "form-label" %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :cif, I18n.t("aia_store.clients.cols.cif"), class: "form-label" %>
+          <%= f.text_field :cif, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <%= f.label :phone1, I18n.t("aia_store.clients.cols.phone1"), class: "form-label" %>
+          <%= f.text_field :phone1, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :phone2, I18n.t("aia_store.clients.cols.phone2"), class: "form-label" %>
+          <%= f.text_field :phone2, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :fax, I18n.t("aia_store.clients.cols.fax"), class: "form-label" %>
+          <%= f.text_field :fax, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <%= f.label :owner_name, I18n.t("aia_store.clients.cols.owner_name"), class: "form-label" %>
+          <%= f.text_field :owner_name, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :owner_phone, I18n.t("aia_store.clients.cols.owner_phone"), class: "form-label" %>
+          <%= f.text_field :owner_phone, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :owner_email, I18n.t("aia_store.clients.cols.owner_email"), class: "form-label" %>
+          <%= f.text_field :owner_email, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <%= f.label :admin_name, I18n.t("aia_store.clients.cols.admin_name"), class: "form-label" %>
+          <%= f.text_field :admin_name, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :admin_phone, "Teléfono Administración", class: "form-label" %>
+          <%= f.text_field :admin_phone, class: "form-control" %>
+        </div>
+        <div class="col-md-4 mb-3">
+          <%= f.label :admin_email, I18n.t("aia_store.clients.cols.admin_email"), class: "form-label" %>
+          <%= f.text_field :admin_email, class: "form-control" %>
+        </div>
+      </div>
+
+      <div class="row"  data-controller="client">
+        <div class="col-md-4 mb-3">
+          <%= f.label :address, I18n.t("aia_store.clients.cols.address"), class: "form-label" %>
+          <%= f.text_field :address, class: "form-control" %>
+        </div>
+        <div class="col-md-2 mb-3">
+          <%= f.label :zip_code, I18n.t("aia_store.clients.cols.zip_code"), class: "form-label" %>
+          <%= f.text_field :zip_code, 
+          class: "form-control", 
+          data: { action: "change->client#updateSelects", target: "client.zipCodeInput" } %>
+        </div>
+        <div class="col-md-3 mb-3" id="provincia">
+          <%= f.label :province_id, "Provincia", class: "form-label" %>
+           <%= f.select :province_id, 
+          options_for_select([], selected: nil), 
+          {}, 
+          class: "form-select", 
+          data: { target: "client.provinceSelect" } %>
+        </div>
+        <div class="col-md-3 mb-3" id="municipio">
+          <%= f.label :municipality_id, "Municipio", class: "form-label" %>
+           <%= f.select :municipality_id, 
+          options_for_select([], selected: nil), 
+          {}, 
+          class: "form-select", 
+          data: { target: "client.municipalitySelect" } %>
+                  </div>
+      </div>
+
+
+      <div class="mb-3">
+        <%= f.label :method_of_payment_id, I18n.t("aia_store.clients.cols.method_of_payment"), class: "form-label" %>
+        <%= f.collection_select :method_of_payment_id, MethodOfPayment.all, :id, :name, { include_blank: true }, class: "form-control" %>
+      </div>
+
+      <div class="d-grid">
+        <%= f.submit I18n.t("aia_store.buttons.save"), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>

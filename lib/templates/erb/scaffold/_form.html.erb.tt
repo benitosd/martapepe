@@ -1,0 +1,41 @@
+<%%= form_for(@<%= singular_table_name %>) do |f| %>
+  <%% if @<%= singular_table_name %>.errors.any? %>
+    <div id="error_explanation" class="alert alert-danger">
+      <h2>
+        <%%= pluralize(@<%= singular_table_name %>.errors.count, "error") %> 
+        prohibited this <%= singular_table_name %> from being saved:
+      </h2>
+      <ul>
+        <%% @<%= singular_table_name %>.errors.full_messages.each do |msg| %>
+          <li><%%= msg %></li>
+        <%% end %>
+      </ul>
+    </div>
+  <%% end %>
+
+  <% attributes.each do |attribute| -%>
+    <div class="mb-3">
+      <% if attribute.password_digest? -%>
+        <%%= f.label :password, class: 'form-label' %>
+        <%%= f.password_field :password, class: 'form-control' %>
+        </div>
+        <div class="mb-3">
+          <%%= f.label :password_confirmation, class: 'form-label' %>
+          <%%= f.password_field :password_confirmation, class: 'form-control' %>
+      <% else -%>
+        <% if attribute.reference? -%>
+          <%%= f.label :<%= attribute.column_name %>, class: 'form-label' %>
+          <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %>, class: 'form-control' %>
+        <% else -%>
+          <%%= f.label :<%= attribute.name %>, I18n.t("<%= application_name %>.<%= plural_table_name %>.cols.<%= attribute.column_name %>"), class: 'form-label' %>
+          <%%= f.<%= attribute.field_type %> :<%= attribute.name %>, class: 'form-control' %>
+        <% end -%>
+      <% end -%>
+    </div>
+  <% end -%>
+
+  <div class="actions mt-3">
+    <%%= f.submit class: 'btn btn-primary' %>
+  </div>
+<%% end %>
+

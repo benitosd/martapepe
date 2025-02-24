@@ -1,0 +1,8 @@
+<div class="alert alert-danger" id="form_errors">
+  <h5><%= I18n.t("aia_store.errors.prohibited_save") %></h5>
+  <ul>
+    <% errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>

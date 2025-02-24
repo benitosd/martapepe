@@ -1,0 +1,37 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h3 class="card-title">
+      <%= @family.new_record? ? I18n.t("aia_store.families.new") : I18n.t("aia_store.families.edit") %>
+    </h3>
+    <%= link_to I18n.t("aia_store.buttons.back"), families_path, class: "btn btn-secondary float-end" %>
+  </div>
+
+  <div class="card-body">
+    <%= form_with(model: @family, local: true) do |form| %>
+      <% if @family.errors.any? %>
+        <div class="alert alert-danger" role="alert">
+          <h4 class="alert-heading"><%= pluralize(family.errors.count, "error") %> <%= I18n.t("aia_store.messages.prohibited_save") %>:</h4>
+          <ul>
+            <% @family.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="mb-3">
+        <%= form.label :name, I18n.t("aia_store.families.cols.name"), class: "form-label" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+
+      <div class="mb-3">
+        <%= form.label :description, I18n.t("aia_store.families.cols.description"), class: "form-label" %>
+        <%= form.text_field :description, class: "form-control" %>
+      </div>
+
+      <div class="d-grid">
+        <%= form.submit I18n.t("aia_store.buttons.save"), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>

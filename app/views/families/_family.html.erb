@@ -1,0 +1,14 @@
+<tr id="<%= dom_id(family) %>" data-controller="editable" data-editable-id="<%= family.id %>">
+  <td >
+    <span class="d-inline-block editable-text" data-editable-target="namePText"><%= family.name %></span>
+    <input type="text" name="name" value="<%= family.name %>" class="d-none form-control editable-input" data-editable-target="namePInput">
+  </td>
+  <td >
+    <span class="d-inline-block editable-text" data-editable-target="descriptionText"><%= family.description %></span>
+    <input type="text" name="description" value="<%= family.description %>" class="d-none form-control editable-input" data-editable-target="descriptionInput">
+  </td>
+  <td data-editable-target="actions">
+    <button class="btn btn-warning btn-sm" data-action="click->editable#edit">Editar</button>
+    <button class="btn btn-danger btn-sm" data-action="click->editable#delete">Eliminar</button>
+  </td>
+</tr>

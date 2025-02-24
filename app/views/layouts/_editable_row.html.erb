@@ -1,0 +1,17 @@
+<tr id="<%= dom_id(resource) %>" 
+    data-controller="editable" 
+    data-editable-resource-name-value="<%= resource_name %>" 
+    data-editable-resource-id-value="<%= resource.id %>" 
+    data-editable-endpoint-value="<%=  parent ? polymorphic_path([parent, resource.class]) :  polymorphic_path(resource.class)%>">
+                <% fields.each do |field| %>
+        <td>
+        <span class="editable-text" data-editable-target="text" data-field="<%= field %>"><%= resource.send(field) %></span>
+      <input type="text" name="<%= field %>" value="<%= resource.send(field) %>" class="d-none form-control editable-input" data-editable-target="input" data-field="<%= field %>">
+    </td>
+  <% end %>
+
+  <td data-editable-target="actions">
+    <button class="btn btn-warning btn-sm" data-action="click->editable#edit">Editar</button>
+    <button class="btn btn-danger btn-sm" data-action="click->editable#delete">Eliminar</button>
+  </td>
+</tr>

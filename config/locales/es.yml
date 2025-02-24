@@ -1,0 +1,859 @@
+es:
+  aia_store:
+    search_order_bar:
+      data_filter: "Criterios de busqueda"
+      search: "Buscar"
+      order_by: "Ordenar por"
+      provider_by: "Proveedor"
+      item_type: "Tipo de artículo"
+      store: "Almacén"
+      inventory_day: "Día de conteo"
+      colour_by: "Colores"
+      item_type_type_by: "Clases"
+      thickness_by: "Espesores"
+      material_by: "Materiales"
+      size_by: "Tamaños"
+    actions:
+      title: "Acciones"
+    messages:
+      created: "%{resource} creado correctamente."
+      manipulated: "%{resource} manipulado correctamente."
+      confirm_delete: "¿Está seguro que desea eliminar?"
+      error: "Se han producido errores y no se ha podido completar la acción"
+      form_errors: "Errores en el formulario"
+      destroyed: "%{resource} eliminado correctamente."
+    buttons:
+      close: "Cerrar"
+      new: "Crear"
+      save: "Guardar"
+      back: "Volver"
+      show: "Mostrar"
+      cancel: "Cancelar"
+      edit: "Editar"
+      delete: "Eliminar"
+      actions: "Acciones"
+      new_purchase_detail: "Añadir detalle"
+      new_item_item: "Añadir composición"
+      new_dispatch_note_detail: "Añadir detalle"
+      new_section: "Nueva sección"
+      generate_dispatch_note: "Generar albarán"
+      generate_budget_variant: "Nueva variante"
+      new_invoice_detail: "Nuevo detalle"
+      generate_invoice: "Generar Factura"
+      composite_items: "Componer articulo"
+      new_work_order_detail: "Nuevo detalle"
+      generate_stock: "Generar stock"
+      new_detail: "Añadir detalle"
+      new_item_calculation_concept: "Nuevo concepto"
+      back_to_budget: "Volver al presupuesto"
+      show_stock: "Stock"
+      generate_from_work_orders: "Generar lineas a partir de ordenes de trabajo"
+      show_document: "Abrir documento"
+      print: "Imprimir"
+      invoice: "Facturar"
+      generate_invoice_details: "Generar lineas"
+      returned: "Devolver"
+      paid: "Abonar"
+    priorities:
+      new: "Nueva prioridad"
+      edit: "Editar prioridad"
+      list:
+        title: "Listado de prioridades"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        order: "Orden"
+    units:
+      new: "Nueva unidad"
+      edit: "Editar unidad"
+      list:
+        title: "Listado de unidades"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        unit_type: "Tipo"
+        square_meters: "Cálculo por metros cuadrádos"
+        linneal_meters: "Cálculo por metros lineales"
+        units: "Cálculo por unidad"
+    containers:
+      new: "Nueva contenedor"
+      edit: "Editar contenedor"
+      list:
+        title: "Listado de contenedores"
+      cols:
+        code: "Código"
+        customs: "Aduana"
+        tax: "Aiem"
+        insurance: "Seguros"
+        transport: "Transporte peninsula"
+        local_transport: "Transporte local"
+    families:
+      new: "Nueva familia"
+      edit: "Editar familia"
+      list:
+        title: "Listado de familias"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        parent_family_id: "Familia padre"
+    providers:
+      show:
+        title: "Ficha de proveedor"
+        prices: "Precio de artículos"
+      new: "Nuevo proveedor"
+      edit: "Editar proveedor"
+      list:
+        title: "Listado de proveedores"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+    stores:
+      show:
+        title: "Ficha de Almacén"
+        sections: "Secciones del almacén"
+      new: "Nuevo almacén"
+      edit: "Editar almacén"
+      list:
+        title: "Listado de almacenes"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        count: "Cantida de Secciones"
+    purchases:
+      states:
+        state_0: "Nuevo"
+        state_1: "Abierto"
+        state_2: "Cerrado"
+      new: "Nueva compra"
+      edit: "Editar compra"
+      list:
+        title: "Listado de compras"
+      show:
+        title: "Ficha de compra"
+        details: "Detalle de compra"
+      cols:
+        purchase_code: "Número compra"
+        date: "Fecha"
+        provider_id: "Proveedor"
+        state: "Estado"
+        observations: "Observaciones"
+    purchase_details:
+      show:
+        save_new_price: "Almacenar precio maestro"
+      new: "Nuevo detalle"
+      cols:
+        quantity: "Cantidad"
+        item: "Artículo"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        new_price: "Nuevo precio"
+        total_price: "Total"
+        sizes: "Medidas"
+    items:
+      show:
+        title: "Ficha de artículo"
+        composite: "Composición"
+        prices: "Precios por proveedor"
+        price_calculation_concepts: "Conceptos de cálculo de precio"
+      edit: "Editar artículo"
+      new: "Nuevo artículo"
+      list:
+        title: "Listado de artículos"
+      cols:
+        real_code: "Código real"
+        real_description: "Descripción real"
+        item_type_type: "Tipo de clases"
+        item_type: "Tipo de artículo"
+        provider_type: "Tipo de proveedor"
+        material_type: "Tipo de material"
+        colour_type: "Tipo de color"
+        thickness_type: "Tipo de espesor"
+        name: "Nombre"
+        code: "Codigo"
+        sizes: "Medidas"
+        measure: "Desarrollos"
+        unit: "Unidad"
+        family: "Familia"
+        priority: "Prioridad"
+        description: "Descripción"
+        max_stock: "Stock máximo"
+        min_stock: "Stock mínimo"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        composite: "Compuesto"
+        size: "Tipo de Medida"
+        inventorial_name: "Nombre para el Inventario"
+    item_provider_prices:
+      cols:
+        item: "Artículo"
+        provider: "Proveedor"
+        price: "Precio"
+        date: "Fecha"
+        offer: "Oferta"
+    item_items:
+      new: "Nuevo"
+      cols:
+        quantity: "Cantidad"
+        item_code: "Código"
+        item_name: "Artículo"
+        item: "Artículo"
+    dispatch_notes:
+      new: "Nuevo albarán"
+      list:
+        title: "Listado de albaranes"
+      show:
+        title: "Ficha de albarán"
+        details: "Detalle del albarán"
+      cols:
+        purchase: "Pertenece a la compra"
+        dispatch_note_code: "Código"
+        entry_date: "Fecha de entrada"
+        observations: "Observaciones"
+    dispatch_note_details:
+      new: "Nuevo detalle"
+      cols:
+        quantity: "Cantidad"
+        item: "Artículo"
+        sizes: "Medidas"
+        new_price: "Precio"
+        total_price: "Precio total"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+    sections: 
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        parent_section: "Sección padre"
+    stocks:
+      filters:
+        title: "Filtrar por Tamaños"
+        width_min: "Ancho Mínimo"
+        width_max: "Ancho Máximo"
+        height_min: "Alto Mínimo"
+        height_max: "Alto Máximo"
+        submit: "Buscar"
+      buttons:
+        new_stock: "Stock artículo de corte"
+        new_unit_stock: "Stock artículo unitario"
+        new_cutting_stock: "Stock artículo de corte"
+        new_cutting: "Ejecutar corte"
+        regularize_stock: "Regularizar stock"
+      edit: "Editar stock"
+      show:
+        title: "Ficha de stock"
+        cuttings: "Cortes"
+      new: "Alta de stock"
+      list:
+        title: "Stock de artículos"
+      cuttings: 
+        new: "Nuevo Corte"
+      cols:
+        item: "Artículo"
+        stock_code: "Código"
+        section: "Sección"
+        store: "Almacén"
+        units: "Unidades"
+        sizes: "Medidas"
+        parent_cutting_stock: "Corte perteneciente a"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        quantity: "Cantidad"
+        cutting_level: "Nivel"
+        cuttings: "Cortes"
+        total: "Cantidad"
+        state: "Estado"
+      no_stock: "No Stock"
+    clients:
+      edit: "Editar cliente"
+      new: "Nuevo cliente"
+      list:
+        title: "Listado de clientes"
+      cols:
+        name: "Nombre"
+        client_number: "Número de cliente"
+        address: "Dirección"
+        city: "Ciudad"
+        zip_code: "C.P."
+        cif: "C.I.F."
+        ledger_account: "Número de Cuenta"
+        phone1: "Teléfono 1"
+        phone2: "Teléfono 2"
+        fax: "Fax"
+        owner_name: "Nombre Propietario"
+        owner_email: "Email Propietario"
+        owner_phone: "Teléfono Propietario"
+        admin_name: "Contacto Administración"
+        admin_email: "Email Administración"
+        admin_phone: "Teléfon Administración"
+        web: "Web"
+        cnae: "CNAE"
+        method_of_payment: "Método de pago"
+        ccc: "CCC"
+
+        
+    budget_types:
+      edit: "Editar tipo de presupuesto"
+      new: "Nuevo tipo de presupuesto"
+      list:
+        title: "Listado de tipos de presupuesto"
+      cols:
+        name: "Nombre"
+    taxes:
+      edit: "Editar impuesto"
+      new: "Nuevo impuesto"
+      list:
+        title: "Listado de impuestos"
+      cols:
+        name: "Nombre"
+        value: "Valor"
+    payments:
+      edit: "Editar tipo de pago"
+      new: "Nuevo tipo de pago"
+      list:
+        title: "Listado de tipos de pago"
+      cols:
+        name: "Nombre"
+    agreements:
+      cols:
+        name: "Nombre"
+        client: "Cliente"
+      list:
+        title: "Listado de contratos"
+      new: "Nuevo contrato"
+      edit: "Editar contrato"
+    budgets:
+      show:
+        composites:
+          title: "Composición"
+        details:
+          supplements: "Suplementos"
+          quantity: "Cantidad"
+          item: "Artículo"
+          price: "Precio"
+          sizes: "Medidas"
+          priority: "Prioridad"
+          total: "Total"
+        variants:
+          title: "Variantes"
+          variant_code: "Código"
+      new: "Nuevo presupuesto"
+      edit: "Editar presupuesto"
+      list:
+        title: "Listado de presupuestos"
+      cols:
+        budget_code: "Número de presupuesto"
+        budget_date: "Fecha"
+        client: "Cliente"
+        agreement: "Contrato"
+        budget_type: "Tipo presupuesto"
+        tax: "Impuesto"
+        observations: "Observaciones"     
+        state: "Estado"
+        name: "Nombre"
+        document: "Documento adjunto"
+    budget_variants:
+      generate: "Generar pdf"
+      transitions:
+        approve: "Aprobar"
+      cols:
+        state: "Estado"
+      show:
+        new_variant_detail: "Nuevo detalle"
+        new_variant_detail_work: "Nuevo trabajo"
+        
+    budget_variant_details:
+      edit: "Editar detalle"
+      show:
+        new_composite: "Nueva composición"
+        new_details: "Nuevo Detalle"
+      composites:
+        new: "Nueva composición"
+        cols:          
+          quantity: "Cantidad"
+          item: "Artículo"
+          price: "Precio"
+          sizes: "Medidas"
+          height: "Ancho"
+          width: "Largo"
+          depth: "Alto"
+          total: "Total"
+      new: "Nuevo detalle"
+      item_text_placeholder: "Escriba aquí para definir manualmente el nombre del artículo"
+      cols:
+        budget_section: "Sección"
+        quantity: "Cantidad"
+        item: "Artículo"
+        price: "Precio"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        priority: "Prioridad"
+        sizes: "Medidas"
+    invoices:
+      new: "Nueva factura"
+      show:
+        details: "Detalle"
+      list:
+        title: "Listado de facturas"
+      cols: 
+        code: "Número"
+        date: "Fecha"
+        agreement: "Contrato"
+        client: "Cliente"
+        budget_variant: "Presupuesto"
+        tax: "Impuesto"
+        observations: "Observaciones" 
+    invoice_details:
+      show:
+        composites: "Composición del artículo"
+        new_composite: "Nuevo compuesto"
+      item_text_placeholder: "Escriba aquí para definir manualmente el nombre del artículo"
+      new: "Nuevo detalle de factura"
+      cols:
+        quantity: "Cantidad"
+        item: "Articulo"
+        price: "Precio"
+        sizes: "Medidas"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        priority: "Prioridad"
+    invoice_detail_composites:
+      new: "Nueva composición"
+      cols:
+        item: "Artículo"
+        price: "Precio"
+        sizes: "Medidas"
+        quantity: "Cantidad"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+    work_orders:
+      list:
+        title: "Listado de órdenes de trabajo"
+      cols:
+        budget: "Presupuesto"
+        state: "Estado"
+        user: "Usuario"
+        date: "Fecha"
+        code: "Código"
+      new: "Nueva orden de trabajo"
+      edit: "Editar orden trabajo"
+      show: 
+        details: "Detalle de la orden"
+    work_order_details:
+      events:
+        do: "Hecho"
+        cancel: "Cancelar"
+        release: "Inicializar"
+      new: "Nuevo detalle"
+      edit: "Editar detalle"
+      cols:
+        stock: "Stock"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        state: "Estado"
+        quantity: "Cantidad"
+    works:
+      edit: "Editar trabajo"
+      new: "Nuevo trabajo"
+      list:
+        title: "Listado de trabajos"
+      cols:
+        description: "Descripción"
+        price: "Precio"
+    purchase_requests:
+      edit: "Editar petición de compra"
+      new: "Nueva petición de compra"
+      list:
+        title: "Listado de peticiones de compra"
+      cols:
+        quantity: "Cantidad"
+        item: "Articulo"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        budget_variant: "Presupuesto"
+    delivery_notes:
+      check_work_orders_to_generate: "Marcar las órdenes de trabajo para generar albarán"
+      edit: "Editar albarán"
+      show:
+        details: "Detalle"
+      list:
+        title: "Listado de albaranes de salida"
+      cols:
+        date: "Fecha"
+        budget_variant: "Presupuesto"
+        user: "Usuario"
+        notes: "Observaciones"
+        state: "Estado"        
+      new: "Nueva nota de despacho"
+    delivery_note_details:
+      new: "Nuevo detalle"
+      cols:
+        stock: "Stock"
+        work_order: "Orden de trabajo"
+    work_sheets:
+      buttons:
+        to_terminate: "Finalizar"        
+      show:
+        details: "Detalles"
+      edit: "Editar parte de trabajo"
+      new: "Nuevo parte de trabajo"
+      list:
+        title: "Partes de trabajo"
+      cols:
+        date: "Fecha"
+        budget_variant: "Presupuesto"
+        user: "Usuario"
+        work: "Trabajo"
+        quantity: "Horas"
+        state: "Estado"
+    work_sheet_details:
+      new: "Nuevo detalle"
+      edit: "Editar detalle"
+      cols:
+        quantity: "Horas"
+        work: "Trabajo"
+    budget_sections:
+      list:
+        title: "Listado de secciones"
+      new: "Nueva seccion"
+      edit: "Editar seccion"
+      cols:
+        name: "Nombre"
+        description: "Descripción"
+        order: "Orden"
+    price_calculation_concepts:
+      list:
+        title: "Listado de conceptos de cálculo"
+      new: "Nuevo concepto de cálculo"
+      edit: "Editar concepto de cálculo"
+      cols:
+        name: "Nombre"
+        price: "Precio por defecto"
+    item_price_calculation_concepts:
+      new: "Nuevo concepto"
+      cols: 
+        item: "Articulo"
+        price_calculation_concept: "Concepto"
+        price: "Precio"
+    budget_variant_detail_price_calculation_concepts:
+      list:
+        title: "Listado de suplementos"
+      cols: 
+        price_calculation_concept: "Suplemento"
+        price: "Precio"
+      new: "Nuevo suplemento"
+      edit: "Editar suplemento"
+    tax_budget_variant_details:
+      list:
+        title: "Listado de Impuestos"
+      cols: 
+        igic: "Igic"
+      new: "Nuevo Impuesto"
+      edit: "Editar Impuesto"
+    item_types:
+      list:
+        title: "Listado de tipos de artículos"   
+      cols:
+        code: "código"
+        name: "nombre"
+        word: "palabra clave"
+      new: "Nuevo tipo de artículo"
+      edit: "Editar tipo de artículo"
+    material_types:
+      list:
+        title: "Listado de tipos de materiales"   
+      cols:
+        code: "código"
+        description: "nombre"
+        item_type_id: "tipo de artículo"
+        word: "palabra clave"
+      new: "Nuevo tipo de material"
+      edit: "Editar tipo de material"
+    thickness_types:
+      list:
+        title: "Listado de tipos de espesores"   
+      cols:
+        code: "código"
+        description: "nombre"
+        item_type_id: "tipo de artículo"
+        word: "palabra clave"
+      new: "Nuevo tipo de espesor"
+      edit: "Editar tipo de espesor"
+    colour_types:
+      list:
+        title: "Listado de tipos de colores"   
+      cols:
+        code: "código"
+        description: "nombre"
+        item_type_id: "tipo de artículo"
+        word: "palabra clave"
+      new: "Nuevo tipo de color"
+      edit: "Editar tipo de color"
+    item_type_types:
+      list:
+        title: "Listado de tipos"   
+      cols:
+        code: "código"
+        description: "nombre"
+        item_type_id: "tipo de artículo"
+        word: "palabra clave"
+      new: "Nuevo tipo"
+      edit: "Editar tipo"
+    provider_types:
+      list:
+        title: "Listado de tipos de proveedores"   
+      cols:
+        code: "código"
+        description: "nombre"
+        item_type_id: "tipo de artículo"
+      new: "Nuevo tipo de proveedor"
+      edit: "Editar tipo de proveedor"  
+    sizes:
+      list:
+        title: "Listado de medidas"   
+      cols:
+        code: "código"
+        description: "nombre"
+        word: "palabra clave"
+      new: "Nuevo tipo de medida"
+      edit: "Editar tipo de medida"
+    measures:
+      list:
+        title: "Listado de desarrollos"   
+      cols:
+        code: "código"
+        description: "nombre"
+        word: "palabra clave"
+      new: "Nuevo tipo de desarrollo"
+      edit: "Editar tipo de desarrollo" 
+    inventory_details:
+      list:
+        title: "Listado de detalles de inventario"
+      cols:
+        quantity: "Cantidad"
+        height: "Ancho"
+        width: "Largo"
+      edit: "Editar detalle de inventario"
+    inventories:
+      list:
+        title: "Listado de inventarios"
+      cols:
+        real_code: "Artículo"
+        inventory_date: "Día de conteo"
+        value: "Precio de costo"
+        meters: "Metros cuadrados"
+        total_value: "Valor Total"
+        piezes: "Total de piezas"
+        section: "Almacén"
+        provider: "Proveedor"
+        type: "Tipo"
+      new: "Nuevo Conteo"
+      edit: "Editar Maestro Inventario"  
+      add: "Añadir detalles al inventario"
+    transports:
+      list:
+        title: "Listado de Transportistas"
+      cols:
+        name: "Nombre"
+      new: "Nuevo Transporte"
+      edit: "Editar Transporte"
+      add: "Añadir Tramsporte"
+    destination_transport_types:
+      list:
+        title: "Listado de Tipo de Transporte"
+      cols:
+        name: "Nombre"
+        count: "Nº de SubGrupos"
+      new: "Nuevo Tipo Transporte"
+      edit: "Editar Tipo Transporte"
+      add: "Añadir Tipo Tramsporte"
+    destination_t_ty_types:
+      list:
+        title: "Listado de SubTipo de Transporte"
+      cols:
+        name: "Nombre"
+      new: "Nuevo SubTipo Transporte"
+      edit: "Editar SubTipo Transporte"
+      add: "Añadir SubTipo Tramsporte"
+    machinery_types:
+      list:
+        title: "Listado de Tipo de Maquinaria"
+      cols:
+        name: "Nombre"
+      new: "Nuevo Tipo de Maquinaria"
+      edit: "Editar Tipo de Maquinaria"
+      add: "Añadir Tipo de Maquinaria"
+    machinery_type_types:
+      list:
+        title: "Listado de SubTipo de Maquinaria"
+      cols:
+        name: "Nombre"
+      new: "Nuevo SubTipo de Maquinaria"
+      edit: "Editar SubTipo de Maquinaria"
+      add: "Añadir SubTipo de Maquinaria"
+    machinery_t_ty_types:
+      list:
+        title: "Listado de Modelos de Maquinaria"
+      cols:
+        name: "Nombre"
+        price: "Precio"
+      new: "Nuevo Modelos de Maquinaria"
+      edit: "Editar Modelos de Maquinaria"
+      add: "Añadir Modelos de Maquinaria"
+    machineries:
+      list:
+        title: "Listado de Máquinas"
+      cols:
+        name: "Nombre"
+        waste: "Residuos"
+        insurance_per_day: "Seguro por día"
+        refueling_per_day: "Repostaje por día"
+
+      new: "Nueva Máquina"
+      edit: "Editar Máquina"
+      add: "Añadir Máquina"
+    credit_notes:
+      new: "Nueva Nota de Abono"
+      show:
+        details: "Detalle"
+      list:
+        title: "Listado de notas de abonos"
+      cols:
+        code: "Abono"
+        date: "Fecha"
+        agreement: "Contrato"
+        client: "Cliente"
+        budget_variant: "Presupuesto"
+        tax: "Impuesto"
+        observations: "Observaciones"
+        invoice_id: "Factura"
+    return_notes:
+      check_delivery_notes_to_generate: "Marcar lineas para generar Devolución"
+      edit: "Editar devolución"
+      show:
+        details: "Detalle"
+      list:
+        title: "Listado de albaranes de devolución"
+      cols:
+        date: "Fecha"
+        budget_variant_id: "Presupuesto"
+        user_id: "Usuario"
+        note: "Observaciones"
+        state: "Estado"
+        new: "Nueva devolución"
+    return_note_details:
+      new: "Nuevo detalle"
+      cols:
+        stock: "Stock"
+        delivery_note: "Albarán"
+    certificaciones:
+      edit: "Editar Certificación"
+      show:
+        details: "Detalle"
+      list:
+        title: "Listado de Certificaciones"
+      cols:
+        date: "Fecha"
+        budget_variant_id: "Presupuesto"
+        observations: "Observaciones"
+        state: "Estado"
+        client: "Cliente"
+        new: "Nueva devolución"
+        code: "Número"
+        tax: "IGIC"
+    detalle_certifiaciones:
+      new: "Nuevo detalle"
+      cols:
+        quantity: "Cantidad"
+        item: "Articulo"
+        price: "Precio"
+        sizes: "Medidas"
+        height: "Ancho"
+        width: "Largo"
+        depth: "Alto"
+        priority: "Prioridad"
+    errors:
+      cut_too_wide: "El ancho del corte (%{width}) no puede exceder el ancho original."
+      cut_exceeds_total: "La suma de los cortes excede el ancho original permitido (%{width})."
+  activerecord:
+    models:
+      item: "Artículo"
+      item_location:
+        one: "Ubicación"
+        other: "Ubicaciones"
+      stock:
+        one: "Stock"
+        other: "Stocks"
+      section:
+        one: "Sección"
+        other: "Secciones"
+      warehouse:
+        one: "Almacén"
+        other: "Almacenes"
+    attributes:
+      item_location:
+        stock: "Stock"
+        section: "Sección"
+        user: "Usuario"
+        status: "Estado"
+        assigned_at: "Fecha de asignación"
+        return_date: "Fecha de devolución"
+        notes: "Notas"
+      stock:
+        item: "Item"
+        reference: "Referencia"
+        description: "Descripción"
+        active: "Activo"
+        entry_date: "Fecha de entrada"
+      section:
+        name: "Nombre"
+        description: "Descripción"
+        warehouse: "Almacén"
+        capacity: "Capacidad"
+        location_code: "Código de ubicación"
+      item:
+        material_type: "Tipo de Material"
+        thickness_type: "Tipo de Espesor"
+        colour_type: "Tipo de Color"
+        priority: "Prioridad"
+        provider_type: "Tipo de Proveedor"
+  errors:
+    models:
+      item_location:
+        attributes:
+          stock:
+            required: "debe existir"
+          section:
+            required: "debe especificarse cuando el item está en almacén"
+          user:
+            required: "debe especificarse cuando el item está asignado"
+      stock:
+        attributes:
+          item:
+            required: "debe existir"
+          reference:
+            taken: "ya está en uso"
+      item:
+        attributes:
+          material_type:
+            required: "El tipo de material es obligatorio"
+          thickness_type:
+            required: "El tipo de espesor es obligatorio"
+          colour_type:
+            required: "El tipo de color es obligatorio"
+          priority:
+            required: "La prioridad es obligatoria"
+          provider_type:
+            required: "El tipo de proveedor es obligatorio"
+    messages:
+      required: "es obligatorio"
+      form_errors: "Errores en el formulario"
+      

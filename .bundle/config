@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__MYSQL2: "--with-opt-include=/usr/include --with-opt-lib=/usr/lib/x86_64-linux-gnu"

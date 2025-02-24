@@ -1,0 +1,28 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <i class="fas fa-table me-1"></i>
+    <%%= I18n.t("<%= application_name %>.<%= plural_table_name %>.list.title") %>
+    <%%= link_to I18n.t("<%= application_name %>.buttons.new"), new_<%= singular_table_name %>_path, class: 'badge bg-danger', data: { turbo_frame: 'modal' } %>
+  </div>
+
+  <table class="table table-hover my-0">
+    <thead>
+      <tr class="fixed-width">
+        <% attributes.each do |attribute| -%>
+          <th><%%= I18n.t("<%= application_name %>.<%= plural_table_name %>.cols.<%= attribute.name %>") %></th>
+        <% end -%>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <%%= render partial: '<%= plural_table_name %>' %>
+    </tbody>
+  </table>
+</div>
+
+<div class="custom-pagination">
+  <%%= page_entries_info @<%= plural_table_name %>, renderer: BootstrapPagination::Rails %>
+</div>
+<div class="custom-pagination">
+  <%%= will_paginate @<%= plural_table_name %>, renderer: BootstrapPagination::Rails %>
+</div>

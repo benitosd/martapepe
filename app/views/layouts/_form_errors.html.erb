@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+  <div class="alert alert-danger" id="form_errors">
+    <h4><%= I18n.t("aia_store.messages.form_errors") %></h4>
+    <ul>
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

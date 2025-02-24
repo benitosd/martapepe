@@ -1,0 +1,2 @@
+$("#provincia").html("<%= j label :province_id, "Provincia"%></br><%= j collection_select :client, :province_id,  @province, :id, :name, {:selected => @province.first.id} %>");
+$("#municipio").html("<%= j label :municipality_id, "Municipio"%></br><%= j collection_select :client, :municipality_id,  @municipalities, :id, :name, {:selected => @municipalities.first.id} %>");

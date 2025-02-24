@@ -1,0 +1,13 @@
+<div class="panel radius">
+<p>
+  <strong><%= I18n.t("aia_store.clients.cols.name") %>:</strong>
+  <%= @client.name %>
+</p>
+<p>
+  <strong><%= I18n.t("aia_store.clients.cols.client_number") %>:</strong>
+  <%= @client.client_number %>
+</p>
+
+</div>
+<%= link_to I18n.t("aia_store.buttons.edit"), edit_client_path(@client), :class => "small button radius" %>
+<%= link_to I18n.t("aia_store.buttons.back"), clients_path, :class => "small button secondary radius" %>
