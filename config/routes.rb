@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
   get 'pages/search', to: 'pages#search'
   # Defines the root path route ("/")
-  root "homes#index"
+  root "orden_de_trabajos#index"
   get "search/query"
 end

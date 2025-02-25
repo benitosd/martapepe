@@ -6,7 +6,7 @@
     sorter_list = "#{controller.upcase}_SORTER_LIST".constantize
 %>
 
-<div class="row" data-controller="form-solr" style="padding: 20px 50px 20px 50px">
+<div class="search-bar-fixed" data-controller="form-solr">
   <%= form_tag index_url_path, { id: "solr", method: :get, data: { form_solr_target: "form" } , class: "row g-3 align-items-center" } do %>
     <!-- Filtro de búsqueda -->
     <div class="col-md-5">
@@ -38,6 +38,24 @@
     </div>  
   <% end %>
 </div>
+
+<style>
+.search-bar-fixed {
+  position: fixed;
+  top: 56px; /* Altura del navbar superior */
+  left: 0;
+  right: 0;
+  z-index: 999; /* Menor que el z-index del navbar superior */
+  background-color: white;
+  padding: 20px 50px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ajustar el margen para el contenido principal */
+.container {
+  margin-top: 156px; /* 56px del navbar + 100px de la barra de búsqueda */
+}
+</style>
 
 <% else %>
   <h4 class="text-danger"><%= "¡¡¡Error!!! Debes pasar el controlador mediante la variable :controller" %></h4>
