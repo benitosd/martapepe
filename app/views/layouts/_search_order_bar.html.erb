@@ -42,18 +42,25 @@
 <style>
 .search-bar-fixed {
   position: fixed;
-  top: 56px; /* Altura del navbar superior */
+  top: 56px;
   left: 0;
   right: 0;
-  z-index: 999; /* Menor que el z-index del navbar superior */
+  z-index: 999;
   background-color: white;
   padding: 20px 50px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: margin-left .15s ease-in-out;
+}
+
+/* Cuando el sidebar está abierto */
+body:not(.sb-sidenav-toggled) .search-bar-fixed {
+  margin-left: 225px; /* Ancho del sidebar */
+  width: calc(100% - 225px);
 }
 
 /* Ajustar el margen para el contenido principal */
 .container {
-  margin-top: 156px; /* 56px del navbar + 100px de la barra de búsqueda */
+  margin-top: 156px;
 }
 </style>
 
